@@ -1,0 +1,11 @@
+<mapper namespace="user">
+
+    <select id="selectList" resultType="com.vai.pojo.User">
+        select * from user
+    </select>
+
+    <select id="selectOne" resultType="com.vai.pojo.User">
+        select * from user where id = ? and username = ?
+    </select>
+
+</mapper>
